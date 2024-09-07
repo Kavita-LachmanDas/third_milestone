@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./assest/style.css">
+</head>
+<body style="background: rgb(2,0,36); background: radial-gradient(circle, rgba(2,0,36,1) 23%, rgba(33,121,182,1) 61%, rgba(3,8,95,1) 90%, rgba(211,192,192,0.8885679271708683) 100%);">
+    <div class="form-section">
+        <h2>Fill Your Details to Build Resume</h2>
+        <form id="resumeForm">
+            <h3 style="color: purple; font-size: 30px;">Personal Information</h3>
+            <label for="name" style="color: purple;">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email" style="color: purple;">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="phone" style="color: purple;">Phone:</label>
+            <input type="text" id="phone" required><br>
+            <label for="linkedin" style="color: purple;">LinkedIn:</label>
+            <input type="text" id="linkedin"><br>
+            <label for="github" style="color: purple;">GitHub:</label>
+            <input type="text" id="github"><br>
+
+            <h3 style="color: purple; font-size: 30px;">Education</h3>
+            <label for="university" style="color: purple;">University:</label>
+            <input type="text" id="university" required><br>
+            <label for="highSchool" style="color: purple;">High School:</label>
+            <input type="text" id="highSchool"><br>
+
+            <h3 style="color: purple;">Work Experience</h3>
+            <textarea id="workExperience" placeholder="Describe your work experience"></textarea><br>
+
+            <h3 style="color: purple;">Skills</h3>
+            <input type="text" id="skills" placeholder="Enter your skills, separated by commas"><br>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div class="resume" id="resume" style="display: none;">
+       
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
